@@ -3,22 +3,27 @@
 require('_inc_/config.php');
 require('_inc_/functions.php');
 require('_inc_/vcp.class.php');
-require('_inc_/header.php'); ?>
+require('_inc_/header.php');
 
-	<div id="login-box">
-	
-	<form action="login.php" method="post">
-		<label for="login">Login:</label> <input type="text" name="login" id="login" value="<?php echo (isset($_POST['login'])) ? $_POST['login'] : null; ?>" />
-		<label for="senha">Senha:</label> <input type="password" name="senha" id="senha" value="<?php echo (isset($_POST['senha'])) ? $_POST['senha'] : null; ?>" />
-		<input type="image" src="images/bt-logar.png" class="bt" />
-	</form>
-	
-	</div>
-	<?php
-	if(isset($_POST['login'])) {
+if ($vcp->isLoggedIn()) {
+	$vcp->setFlash('Você já está logado.', 'alert');
+} else {
+	if (isset($_POST['login']) && isset($_POST['senha'])) {
 		$vcp->login();
 	} else {
-		$vcp->setFlash('Voc� precisa estar logado para utilizar o ' . $CONFIG['serverName'] . ' vCP', 'alert');
+		echo '
+		<div id="login-box">
+			<form action="login.php" method="post">
+				<label for="login">Login:</label> 
+				<input type="text" name="login" id="login" value="' . (isset($_POST['login']) ? htmlspecialchars($_POST['login']) : '') . '" />
+				<label for="senha">Senha:</label> 
+				<input type="password" name="senha" id="senha" value="' . (isset($_POST['senha']) ? htmlspecialchars($_POST['senha']) : '') . '" />
+				<input type="image" src="images/bt-logar.png" class="bt" />
+			</form>
+		</div>';
+		$vcp->setFlash('Você precisa estar logado para utilizar o ' . $CONFIG['serverName'] . ' vCP.', 'alert');
 	}
-	?>
-	<?php require('_inc_/footer.php'); ?>
+}
+
+require('_inc_/footer.php');
+?>
