@@ -1,3 +1,14 @@
+30/03/2023
+* Removido o uso de funções desnecessárias. [Mike]
+* Adicionado o uso de namespaces para evitar conflitos de nome de classes e funções. [Mike]
+* Melhorado o uso de condicionais para evitar a repetição de código. [Mike]
+* Adicionado comentários para melhorar a legibilidade do código. [Mike]
+* Melhorado o uso de variáveis para evitar redundância e melhorar a legibilidade do código. [Mike]
+* Adicionado validações para evitar erros e garantir a segurança do sistema. [Mike]
+* Melhorado o código HTML para torná-lo mais legível e organizado. [Mike]
+* Removido o uso de tags PHP desnecessárias. [Mike]
+* Adicionado o uso de classes e objetos para tornar o código mais modular e fácil de entender e manter. [Mike]
+
 28/05/2010
 	* Corrigido pequenos bugs no sistema de mensagems (flash) [Mike]
 	* Adicionada opções de extensão das imagens dos itens no config.php [Mike]
