@@ -1,6 +1,6 @@
 28/05/2010
 	* Corrigido pequenos bugs no sistema de mensagems (flash) [Mike]
-	* Adicionada opções de extens�o das imagens dos itens no config.php [Mike]
+	* Adicionada opções de extensão das imagens dos itens no config.php [Mike]
 	* Criado sistema de bloqueio para votar apenas uma vez, mesmo entrando em outra conta [Mike]
 	* corrigido tamanho da pop-up de voto, os valores estavam invertidos (width e height) [Mike]
 	* Corrigido timezone, a hora que a pessoa podia votar novamente estava aparecendo errada [Mike]
