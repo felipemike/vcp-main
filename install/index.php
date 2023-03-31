@@ -90,7 +90,7 @@ $vcp = new vCP($CONFIG);
 								echo 'Erro ao escrever arquivo de configura��o';
 							} else {
 								echo 'vCP configurado com sucesso.<br />
-								Voc� ser� redirecionado em 5 segundos...
+								Você será redirecionado em 5 segundos...
 								<meta http-equiv="refresh" content="5; url=../index.php">';
 							}
 							fclose($fp);

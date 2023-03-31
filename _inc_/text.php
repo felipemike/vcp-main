@@ -14,7 +14,7 @@ define('error_10', 'Preencha todos os campos');
 define('error_11', 'Não foi possível editar o item');
 define('error_12', 'Não foi possível adicionar o item');
 define('error_13', 'Você não tem pontos suficientes');
-define('error_14', 'Sua kafra est� cheia');
+define('error_14', 'Sua kafra está cheia');
 define('error_15', 'Você não pode estar logado no servidor');
 define('error_16', 'Não foi possível trocar o item');
 define('error_17', 'Um ID deve ser informado');
