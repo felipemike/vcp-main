@@ -1,7 +1,7 @@
 31/03/2023
-	* O código foi reformatado para seguir um estilo consistente em todo o arquivo.
-	* As tags PHP curtas foram substituídas pelas tags completas.
-	* A função isset() foi usada para evitar erros em variáveis indefinidas.
+	* O código foi reformatado para seguir um estilo consistente em todo o arquivo. [Mike]
+	* As tags PHP curtas foram substituídas pelas tags completas. [Mike]
+	* A função isset() foi usada para evitar erros em variáveis indefinidas. [Mike]
 
 30/03/2023
 	* Removido o uso de funções desnecessárias. [Mike]
